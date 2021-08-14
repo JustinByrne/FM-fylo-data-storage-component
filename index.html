@@ -8,12 +8,49 @@
         <link href="./tailwind.css" rel="stylesheet">
     </head>
     
-    <body>
-        You’ve used 815 GB of your storage
-
-        185 GB Left
-
-        0 GB
-        1000 GB
+    <body class="font-raleway">
+        <div class="h-screen w-full flex justify-center items-center bg-mobile lg:bg-desktop bg-cover lg:bg-auto lg:bg-bottom bg-no-repeat bg-blue-very-dark">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-8 px-4 w-full lg:max-w-4xl place-content-end">
+                <div class="bg-blue-dark lg:col-span-3 rounded-b-xl rounded-tl-xl rounded-tr-[7rem] flex flex-col p-10 drop-shadow-xl">
+                    <div class="pb-8">
+                        <img src="./images/logo.svg">
+                    </div>
+                    <div class="flex space-x-2">
+                        <img src="./images/icon-document.svg" class="p-3 bg-blue-very-dark rounded-xl">
+                        <img src="./images/icon-folder.svg" class="p-3 bg-blue-very-dark rounded-xl">
+                        <img src="./images/icon-upload.svg" class="p-3 bg-blue-very-dark rounded-xl">
+                    </div>
+                </div>
+                <main class="bg-blue-dark rounded-xl p-4 pb-16 lg:p-9 relative lg:col-span-4 self-end drop-shadow-xl">
+                    <p class="text-blue-pale text-center lg:text-left pb-3">
+                        You’ve used <strong>815 GB</strong> of your storage
+                    </p>
+                    <div class="h-6 p-[0.25rem] w-full bg-blue-very-dark/50 rounded-full mb-2">
+                        <div class="h-full w-2/3 rounded-full bg-gradient-to-r from-pink-light to-pink-dark pr-0.5 flex items-center justify-end">
+                            <div class="bg-white h-3.5 w-3.5 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-9 left-1/2 lg:-top-10 lg:bottom-auto lg:-right-10 lg:left-auto -translate-x-1/2 bg-white text-blue-very-dark text-4xl font-bold flex items-center space-x-2 p-4 rounded-lg">
+                        <span>
+                            185
+                        </span>
+                        <span class="text-sm text-blue-grayish uppercase">
+                            GB Left
+                        </span>
+                    </div>
+                    <div class="hidden w-11 overflow-hidden lg:inline-block absolute -top-3 right-[2.35rem]">
+                        <div class="h-16 bg-white -rotate-45 transform origin-top-right"></div>
+                    </div>
+                    <div class="flex justify-between text-blue-pale font-bold">
+                        <div>
+                            0 GB
+                        </div>
+                        <div>
+                            1000 GB
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
     </body>
 </html>
