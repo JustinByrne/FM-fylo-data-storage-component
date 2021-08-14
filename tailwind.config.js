@@ -20,6 +20,10 @@ module.exports = {
       },
       fontFamily: {
         raleway: 'Raleway, sans-serif',
+      },
+      backgroundImage: {
+        'desktop': "url('./images/bg-desktop.png')",
+        'mobile': "url('./images/bg-mobile.png')",
       }
     },
   },
